@@ -18,30 +18,17 @@ Swipe and sync between two MapLibre maps. This plugin was originally developed f
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <script src="../.env"></script>
-    <script src="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.js"></script>
-    <link
-      href="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.css"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@maplibre/maplibre-gl-compare/dist/maplibre-gl-compare.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@maplibre/maplibre-gl-compare/dist/maplibre-gl-compare.css" rel="stylesheet" />
   </head>
 
   <body>
     <style>
       body {
+        margin: 0;
+        padding: 0;
         overflow: hidden;
       }
 
@@ -60,8 +47,6 @@ Swipe and sync between two MapLibre maps. This plugin was originally developed f
         width: 100%;
       }
     </style>
-    <script src="maplibre-gl-compare.js"></script>
-    <link rel="stylesheet" href="maplibre-gl-compare.css" type="text/css" />
     <div id="comparison-container">
       <div id="before" class="map"></div>
       <div id="after" class="map"></div>
